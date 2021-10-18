@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Learn React
+## Description
+This git is to keep trackj of UDEMY react learning course. Each branches are chapters of this course switch between them to see the other subjects.
+
+# Basics React commands :
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
