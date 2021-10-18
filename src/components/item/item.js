@@ -15,7 +15,7 @@ function Item(props) {
             <h1 /*style={styleCss}*/ className="titre-item">{props.number}</h1>
             <button onClick={() => props.func(itemState)}>Change state</button>
             {/*comme l'image est dans ../../public ça permet le reférencement dynamique : avec le `xyz${myVar}`*/}
-            <img src={process.env.PUBLIC_URL + `/imgOrdi.jp${myLetter}`} />
+            <img src={process.env.PUBLIC_URL + `/imgOrdi.jp${myLetter}`} alt=""/>
         </div>
     );
 }
