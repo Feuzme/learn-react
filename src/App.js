@@ -3,28 +3,39 @@ import Item from "./components/item/item";
 import { useState } from 'react';
 
 function App() {
-  //Fonction permettant de modifer le state de départ du composant.
-  // console.log(useState(10)); //données de départ du composant : ici 10
-  const [monState, setMonState] = useState(10);
+  
+  const [toggle, setToggle] = useState(true);
 
-  const modifyState = (data) => {
-    setMonState(data);
-  };
+  const changeState = () => {
+    setToggle(!toggle)
+  }
 
-  return (
-    <div className="App">
-      <h1 style={{color: "crimson"}} > Oh Hi Mark !</h1>
+  let toggleContenu;
 
-      <Item func={modifyState} number={monState} />
-    </div>
-  );
+  if(toggle){
+    toggleContenu = <h2>State est true</h2>
+  } else {
+    toggleContenu = <h2>State est false</h2>
+  }
 
-  //CODE généré par react (dans les grandes lignes)
-  // return React.createElement(
-  //   'div', 
-  //   {className: 'App'},  
-  //   React.createElement('h1', null, 'Hello app react')
-  // );  
+  if(toggle){
+    return (
+      <div className="App">
+        <h1> Oh Hi Mark !</h1>
+        {toggleContenu}
+        <button onClick={changeState}>ChangeState</button>
+      </div>
+    ); 
+  } else if (toggle === false) {
+    return (
+      <div className="App">
+        <h1> Oh Hi Mark !</h1>
+        {toggleContenu}
+        <button onClick={changeState}>ChangeState</button>
+      </div>
+    )
+  }
+  
 }
 
 export default App;
