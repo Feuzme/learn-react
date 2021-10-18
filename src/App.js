@@ -20,14 +20,17 @@ function App() {
 
   return (
     <div className="App">
-      <p>Short circuit opérator : </p>
+      {/* <p>Short circuit opérator : </p>
       {
         toggle && <h2>true</h2> // short circuit operator ternaire sans else 
       }
       <p>Ternaire :</p>
       {
         toggle ? <h1>True</h1> : <h1>Nope</h1>
-      }
+      } */}
+      <div className={toggle ? "box animated" : "box"}>
+
+      </div>
       <button onClick={changeState}>Change state</button>
     </div>
   );
