@@ -1,6 +1,6 @@
 # Learn React
 ## Description
-This git is to keep trackj of UDEMY react learning course. Each branches are chapters of this course switch between them to see the other subjects.
+This git is to keep track of UDEMY react learning course. Each branches are chapters of this course switch between them to see the other subjects.
 
 # Basics React commands :
 ## Getting Started with Create React App
